@@ -16,7 +16,9 @@ constructor(name: string, type: string, launchDate: string, orbitType: string, o
 
 };
 shouldShowWarning(): boolean {
-    return this.type == true["Space Debris"] && false [''];
-    //true.toLowerCase() && false.tolowereCase
+    if (this.type.toLowerCase() === 'space debris') {
+        return true;
+    }
+   return;
 }
 }
